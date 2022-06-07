@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Grid</title>
+    <link rel="stylesheet" href="style_grid.css">
+    <style>
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
+    min-height: 100%;
+    background-color: #FF0F8C;
+}
+
+.grid-container>*{
+    box-shadow: -1px 1px 7px 0px rgba(0,0,0);
+    border-radius: 2px;
+    padding: 10px;
+    text-align: center;
+}
+
+.header{
+    grid-area: header;
+    background-color: rgb(11,208,234);
+}
+
+.navbar{
+    grid-area: navbar;
+    background-color: rgb(11,208,234);
+}
+
+.main{
+    grid-area: main;
+    background-color: rgb(11,208,234);
+}
+
+.sidebar{
+    grid-area: sidebar;
+    background-color: rgb(11,207,234);
+}
+
+.footer{
+    grid-area: footer;
+    background-color: rgb(11,207,234);
+}
+
+.grid-container{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: "header"
+    "navbar"
+    "main"
+    "sidebar"
+    "footer"
+}
+@media (min-width:400px) {
+    .grid-container{
+        grid-template:
+        "header header" 100px
+        "navbar navbar" 50px
+        "sidebar main" auto
+        "footer footer" 100px/200px auto;
+    }
+}
+
+@media (main-width:600px){
+    
+}
+
+.grid-container{
+    grid-template:
+    "header header"
+    "navbar navbar"
+    "sidebar main"
+    "footer footer";
+}
+
+@media (min-width:900px){
+    .grid-container{
+        grid-template:
+        "header header header" 100px
+        "navbar main sidebar" auto
+        "footer footer footer" 100px/200px auto;
+    }
+}
+
+    </style>
+</head>
+
+<body class="grid-container">
+    <header class="header">
+      <h1>Cruz Flores Angel Jaret </h1>
+      <h2>Estudiante del Instituto Tecnológico de Gustavo A Madero</h2>
+    </header>
+    <nav class="navbar">
+      <h1>DATOS GENERALES</h1><br>
+      <p><b>CURP:</b><br>
+      CUFA021031HDFRLNA0</p>
+      <br>
+      <p><b>Fecha de nacimiento:</b>
+      31/Octubre/2002</p>
+      <br>
+      <p><b>Estado civil:</b>
+      Soltero</p>
+      <br>
+      <p><b>ESTUDIOS:</b><br>
+      Colegio de bachilleres 2 "Elisa Acuña Rossetti"</p>
+      <br>
+      <p><b>Carrera estudiada:</b><br>
+      Turismo</p>
+      <br>
+      <p><b>Cursos:</b><br>
+      * CONAMAT (Terminado)<br>
+      * INGLES BASICO (Terminado)<br>
+      * INGLÉS MEDIO (Terminado) 
+      </p>
+      
+      </nav>
+    <aside class="sidebar">
+      <b><h1>Experiencia de estudios y laboral</h1></b>
+      <div class="nivel">
+        <br><h2>Estudios</h2>
+    <br><progress id="file"max="100" value="60">
+      60% </progress> Inglés </br>
+    
+    <br><progress id="file"max="100" value="50">
+      50% </progress> CSS 3 </br>
+
+    <br><progress id="file"max="100" value="60">
+      60% </progress> HTML 5 </br>
+      <br><h2>Trabajo</h2><br>
+      <ul>
+      <li>Ayudante de contador</li><br>
+      <li>Mesero de restaurante</li><br>
+      <li>Edición de videos</li><br>
+      <li>Ayudante general</li><br>
+      </ul>
+      
+      
+    </aside>
+    <article class="main">
+      <b><h1>Redes sociales</h1></b><br>
+        <ul>
+    <p><li><a href="https://www.twitch.tv/cocolito_0">Twitch</a></li></p><br>
+    <p><li><a href="https://www.instagram.com/angel_cf04/">Instagram</a></li></p><br>
+    <p><li><a href="https://www.facebook.com/profile.php?id=100011506381510">Facebook</a></li></p><br
+    <p><li><a href="https://www.tiktok.com/@cocolito_04">Tiktok</a></li></p>
+        </ul>
+      
+    </article>
+    <footer class="footer">
+      <h1>Contactos</h1><br>
+      
+      <h2>Correo electrónico</h2><br>
+      angeljaretflores@gmail.com<br><br>
+      <h2>Numero de celular</h2><br>
+      5571074360 
+      </footer>
+    
+   
+
+</body>
+</html>
